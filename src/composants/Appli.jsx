@@ -4,8 +4,13 @@ import Controle from './Controle';
 import Taches from './Taches';
 import Accueil from './Accueil';
 import Utilisateur from './Utilisateur';
+import { useState, useEffect } from 'react';
+import { observerEtatConnexion } from '../code/utilisateur-modele';
 
 export default function Appli() {
+
+  // Maintenir la connexion
+  //useEffect(() => onAuthStateChanged(authFirebase, user => setUtil(user)),[] ); 
 
   return (
     // 1)  Si un utilisateur est connecté : 
